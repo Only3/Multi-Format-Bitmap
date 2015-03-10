@@ -1,5 +1,5 @@
 
-        ' Save
+        ' Create
         Dim Bmp = {"1.bmp", "2.jpg", "3.png"}
         Dim Bytes As New List(Of Byte) From {66, 77, Bmp.Count, 0, 0, 0, 54, 0, 0, 0}
         For i = 0 To Bmp.Count - 1
