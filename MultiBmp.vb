@@ -21,7 +21,7 @@
         Next
         IO.File.WriteAllBytes("New.bmp", Bytes.ToArray)
         
-        ' Get
+        ' Extract
         Dim Bytes = IO.File.ReadAllBytes("New.bmp")
         Dim Size, Siz As Integer
         For i = 1 To BitConverter.ToInt16(Bytes, 6)
