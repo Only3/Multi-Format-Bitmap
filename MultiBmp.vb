@@ -1,5 +1,6 @@
 
         ' Create
+        
         Dim Bmp = {"1.bmp", "2.jpg", "3.png"}
         Dim Bytes As New List(Of Byte) From {66, 77, Bmp.Count, 0, 0, 0, 54, 0, 0, 0}
         For i = 0 To Bmp.Count - 1
@@ -22,6 +23,7 @@
         IO.File.WriteAllBytes("New.bmp", Bytes.ToArray)
         
         ' Extract
+        
         Dim Bytes = IO.File.ReadAllBytes("New.bmp")
         Dim Size, Siz As Integer
         For i = 1 To BitConverter.ToInt16(Bytes, 6)
