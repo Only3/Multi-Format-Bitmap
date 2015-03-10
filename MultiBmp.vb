@@ -19,3 +19,4 @@
             End If
         Next
         IO.File.WriteAllBytes("New.bmp", Bytes.ToArray)
+        
